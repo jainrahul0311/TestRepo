@@ -1,0 +1,8 @@
+         APPLCTN PSB=ANT001,PGMTYPE=TP,SCHDTYP=PARALLEL                 00001400
+         TRANSACT CODE=ANTPSR,MSGTYPE=(MULTSEG,RESPONSE,4),            *00001500
+               PARLIM=0,SEGNO=400,                                     *00001600
+               MODE=SNGL,PROCLIM=(03,01)                                00001700
+...
+         APPLCTN PSB=ANT100,PGMTYPE=BATCH                               00001800
+         TRANSACT CODE=ANT100,MSGTYPE=(MULTSEG,NONRESPONSE,6),         *00001900
+               MODE=SNGL,PRTY=(0,0),PROCLIM=(03,01)                     00002000
